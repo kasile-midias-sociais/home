@@ -56,26 +56,37 @@ body {
 
 .img-perfil, 
 .img-perfil-mobile {
-    height: 500px;
-    width: auto;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow:4px 5px 4px black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-perfil-mobile {
     display: none;
 }
 
+
 @media screen and (max-width: 992px) {
+    .img-perfil, .d-none-mobile  {
+        display: none !important;
+    }
+
     .img-perfil-mobile {
         display: block !important;
     }
+}
 
-    .img-perfil, .img-perfil-box {
-        display: none !important;
+@media screen and (min-width: 992px) and (max-width: 992px) { 
+    .ajuste-nine {
+        width: 100% !important;
+    }
+    .col-lg-6-especial {
+        width: 100% !important;
     }
 }
+
 
 
 
